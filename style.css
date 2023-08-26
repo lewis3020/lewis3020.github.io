@@ -1,56 +1,186 @@
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Crimson+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Crimson+Text&family=Raleway&display=swap');
 
-* {
-    text-decoration: none;
-    color: black;
-    font-family: 'Crimson Text', serif;
+html {
+    padding: 0;
+    margin: 0;
 }
 
 body {
-    background-color: rgba(75, 74, 74, 0.67);
-    color: rgba(0, 0, 0, 0.73);
+    margin: 0;
 }
 
-.head{
-    width: auto;
-    height: 200px;
-    border-radius: 50px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 100px;
-    margin-top: 120px;
-    cursor: pointer;
-}
-
-.description {
-    margin-top: 20px;
-    font-size: 20px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    cursor: pointer;
-}
-
-.links {
-    margin-top: 40px;
+header {
     display: flex;
-    justify-content: space-around;
+}
+
+.name{
+    font-family: 'Crimson Text', serif;
+    display: flex;
+    margin-right: 20px;
+}
+
+.top-p {
+    font-family: 'Crimson Text', serif;
+    margin-top: 40px;
+    margin-left: 20px;
+    font-weight: 900;
+    font-size: large;
+    cursor: pointer;
+}
+
+.top-h1{
+    border: 2px solid black;
+    margin-left: 20px;
+    cursor: pointer;
+    width: auto;
+    padding: 10px;
+}
+
+.options {
+    font-family: 'Crimson Text', serif;
+    display: flex;
+    margin-left: auto;
+    margin-right: 100px;
+    cursor: pointer;
 }
 
 li {
-    display: inline-flex;   
-    width: auto;
-    padding: 15px;
-    border-radius: 100px;
-    transition: 2s;
+    display: inline-block;
+    margin-top: 28px;
+    text-align: right;
+    margin-left: 50px;
     cursor: pointer;
+    font-weight: 900;
 }
 
 li:hover {
-    background-color: black;
-    color: aliceblue;
-    transition: 2s;
-    border-radius: 100px;
+    color: red;
+    transition: 0,4s;
 }
 
+.main-content {
+    display: grid;
+}
+
+b {
+    font-weight: 700;
+    color:red;
+    text-decoration: underline;
+}
+
+.head-shot {
+    display: inline-block;
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Crimson Text', serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    color: black;
+}
+
+.head-shot-img {
+    width: auto;
+    height: 200px;
+    border: 5px solid rgb(68, 65, 65);
+    border-radius: 200px;
+    cursor: pointer;
+}
+
+.main-desc {
+     cursor: pointer;
+}
+
+
+.Projects {
+    display: flex;
+    width: auto;
+    height: 40em;
+    margin-top: 50px;
+}
+
+.h1-projects {
+    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Crimson Text', serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: rgb(5, 5, 5);
+    margin-left: 40px;
+}
+
+.about {
+    display: inline-block;
+    width: auto;
+    height: 40em;
+    margin-top: 10px;
+}
+
+.h1-about {
+    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Crimson Text', serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: rgb(5, 5, 5);
+    margin-left: 40px;
+}
+
+.bottom-header {
+    background-color: black;
+    width: auto;
+    height: 10em;
+}
+
+.abit {
+    font-family: 'Crimson Text', serif;
+    text-align: center;
+    cursor: pointer;
+}
+
+.h1-about {
+    cursor: pointer;
+}
+
+.h1-projects {
+    cursor: pointer;
+}
+
+.html-about {
+    display: flex;
+}
+
+.html-img {
+    width: auto;
+    height: 200px;
+    cursor: pointer;
+}
+
+.html-text {
+    font-family: 'Crimson Text', serif;
+    text-align: center;
+    margin-top: 60px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.css-about {
+    display: flex;
+}
+
+.css-img {
+    width: auto;
+    height: 200px;
+    cursor: pointer;
+    margin-top: 40px;
+    margin-left: 38px;
+}
+
+.css-text {
+    font-family: 'Crimson Text', serif;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 20px;
+    cursor: pointer;
+    font-weight: 600;
+}
