@@ -146,41 +146,38 @@ b {
     cursor: pointer;
 }
 
-.html-about {
-    display: flex;
+.cards {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 300px);
+    margin-top: 116px;
 }
 
-.html-img {
-    width: auto;
-    height: 200px;
-    cursor: pointer;
-}
-
-.html-text {
-    font-family: 'Crimson Text', serif;
+.card {
+    width: 200px;
+    height: auto;
+    padding: 20px;
+    background-color: black;
+    color: wheat;
     text-align: center;
-    margin-top: 60px;
+    border-radius: 10px;
+    padding-bottom: 20px;
     cursor: pointer;
-    font-weight: 600;
+    transition: 0.7s;
 }
 
-.css-about {
-    display: flex;
+.card:hover {
+    transition: 1.2s;
+    border-radius: 15px;
+    padding: 25px;
 }
 
-.css-img {
-    width: auto;
-    height: 200px;
-    cursor: pointer;
-    margin-top: 40px;
-    margin-left: 38px;
-}
-
-.css-text {
-    font-family: 'Crimson Text', serif;
-    text-align: center;
-    margin-top: 100px;
-    margin-left: 20px;
-    cursor: pointer;
-    font-weight: 600;
+@media (max-width:1000px) and (min-width:375px) {
+    .cards {
+        display: flexbox;
+        justify-content: center;
+        grid-template-columns: repeat(1, 250px);
+        padding-bottom: 100px;
+        transition: 2s;
+    }
 }
